@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating button</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <div class="action" onclick="actionToggle();">
+        <span>+</span>
+        <ul>
+            <li id="myBtn"><img src="./images/image1.png">call</li>
+            <li><img src="./images/image2.png"><a href="https://api.whatsapp.com/send/?phone=254740259951&text&app_absent=0"> Whatsapp </a></li>
+            <li><img src="./images/image3.png"><a href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F156935991732789%2F%3Fmessaging_source%3Dsource%253Apages%253Amessage_shortlink">Messenger</a></li>
+            <li><img src="./images/image4.png"> <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=userid@gmail.com&tf=1">Gmail</a></li>
+        </ul>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Please enter your phone number and we will call you back soon</p>
+            <form action="https://formspree.io/f/mknkpplj" method="POST" id="my-form">
+                <input type="text" id="fname" name="Number" placeholder="enter your Contant">
+                <button>Wait for call</button>
+            </form>
+            <div id="status"></div>
+        </div>
+
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
