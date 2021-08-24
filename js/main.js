@@ -52,3 +52,13 @@ async function handleSubmit(event) {
     });
 }
 form.addEventListener("submit", handleSubmit)
+
+// make a call
+
+$(function() {
+    $('.phonecell').click(function() {
+        var PhoneNumber = $(this).text();
+        PhoneNumber = PhoneNumber.replace('Phone:', '');
+        window.location.href = 'tel:+254723468573' + PhoneNumber;
+    });
+});
